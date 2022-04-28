@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pet&Shop</title>
+  <Style>
+       @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); 
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        height: 80px;
+        font-family: 'Open Sans', sans-serif;
+        box-shadow: 0px 2px 6px -6px;
+        z-index: 1;
+      }
+      .nome {     
+        color: #FF0077;;
+        margin-right: 20px;
+        margin-left: 130px;
+        font-weight: 800;
+        font-size: 40px;
+      }
+      nav{
+          color: #FF0077; 
+          margin-right: 130px;
+        
+      }
+      .banner {
+      width: 100%;
+      margin-top: 70px;
+      height: 650px;
+      object-fit: cover;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .navitem{
+        margin: 0 10px;    
+        font-weight: 600;
+    }
+    .navitem:hover{
+        color:#FF0077;
+    }
+    .navitem1{
+        background-color: #FF0077;
+        color:white;
+        padding-top: 40px;
+        padding-bottom: 29px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ns{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 32px;
+    }
+    .fa-solid{
+        font-size: 100px;
+        color:#FF0077;
+        transform:rotate(0deg);
+        transition-duration: 0.5s;
+    }
+    .fa-solid:hover{
+        transform: scale(1.2) rotate(15deg);
+        transition-duration: 0.5s;
+    }
+    #icone1{
+        display: inline-block;
+        width: 300px;
+        text-align: center;    
+        vertical-align: top;
+    }
+    #icone2{
+        margin-left: 50px;
+        display: inline-block;
+        width: 300px; 
+        text-align: center;
+        vertical-align: top;
+    }
+    
+    #icone3{
+        margin-left: 50px;
+        display: inline-block;
+        width: 300px;
+        text-align: center;
+        vertical-align: top;
+    }
+    #icone4{
+        margin-left: 50px;
+        display: inline-block;
+        width: 300px;
+        text-align: center;
+        vertical-align: top;
+    }
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    .textoicones{
+        font-weight: 50;
+        font-size: 17px;
+    }
+    .h3icones{
+        color: #FF0077;
+        font-size: 20px;
+    }
+    #frase{
+        background-color: #0077ff;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .frase{
+        margin-left:auto;
+        margin-right:auto;
+        width: 1200px;
+    }
+    .h1frase{
+        font-size: 40px;
+        color: white;
+    }
+    .h1produtos{
+        text-align: center;
+    }
+    .prod{
+            height: 200px;
+            width: auto;
+            padding-top: 5px;
+          }
+          .linha1{
+            margin-right: auto;
+            margin-left: auto;
+            width: 85%;
+            text-align: center;
+            white-space: nowrap;
+          }
+          .produto{
+            width: 16.3%;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+            height: 350px;
+            padding-bottom: 10px;
+          }
+          .produto:hover{
+            opacity: 0.5;
+           border: 1px solid gray;
+           border-radius: 8px; 
+          }
+          .nomeprodutos{
+           margin-left: 10%;
+          }
+         
+        .ph3{
+            padding-top: 15px;
+        }
+        .h3p1{
+            margin-top: -3px;
+        }
+        .botao{
+            text-align: center;
+        }
+        .botao1{
+            background-color: #FF0077;
+            height: 30px;
+            color: white;
+            width: 130px;
+            border-style: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    footer{
+        background-color: #FF0077;
+        bottom: 0;
+        width: 100%;
+        height: 420px;
+    }
+    .h1footer{
+        color:white;
+        font-size: 30px;
+        font-weight:800;
+        margin-left: 10%;
+        padding-top: 50px;
+    }
+    .contato{
+        display: inline-block;
+        padding-top: 10px;
+        margin-left: 10%;
+        text-align: left;
+        
+    }
+    .horario{
+        display: inline-block;
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .siganos{
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: 10%;
+    }
+    .fa-brands{
+        color:white;
+        font-size: 25px;
+        padding-left: 14px;      
+    }
+    .fa-brands:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+    .rodape{
+        text-align: center;
+        height: 30px;
+    }
+    .icones{
+        width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .f1{
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  </Style>
+</head>
+<body>
+    <header>
+        <h1 class="nome">pet&shop</h1>
+        <nav>
+            <a class="navitem1" href="pet&shop.html"> Home </a>
+            <a class="navitem" href="sobre.html"> Sobre </a>
+            <a class="navitem" href="produtos.html">Produtos </a>
+            <a class="navitem" href="servicos.html"> Serviços </a>
+            <a class="navitem" href="faleconosco.html"> Fale Conosco </a>
+        </nav>
+    </header>
+    <section>
+    <img class="banner" src="banner.jpg">
+    </section>
+    <br>
+    <br>
+    <section class="nossosservicos">
+        <h1 class="ns">Nossos Serviços</h1>
+        <div class="icones">
+     <script src="https://kit.fontawesome.com/91c6c42e0e.js" crossorigin="anonymous"></script>  
+     <a href="produtos.html"> <div id="icone1"><i class="fa-solid fa-paw"></i>
+        <h3 class="h3icones">Produtos</h3>
+         <p class="textoicones">Uma variedade de rações, <br> petiscos, brinquedos e <br> acessórios para atender o seu <br> amiguinho da melhor forma.</p>
+    </div></a>
+     <a href="servicos.html"><div id="icone2"><i class="fa-solid fa-shower"></i>
+        <h3 class="h3icones">Banho e tosa</h3>
+         <p class="textoicones">Para deixar seu amiguinho <br> como o padrão de beleza que <br> ele merece e muito cheiroso.</p> 
+         <br>
+    </div></a>
+     <a href="servicos.html"><div id="icone3"><i class="fa-solid fa-syringe"></i>
+        <h3 class="h3icones">Banho e tosa</h3>
+         <p class="textoicones">Para deixar seu amiguinho <br> como o padrão de beleza que <br> ele merece e muito cheiroso.</p> 
+         <br>
+    </div></a>
+     <a href="servicos.html"><div id="icone4"><i class="fa-solid fa-dog"></i>
+        <h3 class="h3icones">Creche</h3>
+        <p class="textoicones">Traga seu pet para interagir <br> com a nossa equipe e <br> sociabilizar com outros animais <br> e fique tranquilo(a) para suas <br> atividades do dia-a-dia.
+        </p>
+    </div></a>
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="frase">
+        <div class="frase">
+            <h1 class="h1frase">pet&shop</h1>
+            <p style="color:white"><b>Só quem é apaixonado por animais sabe:</b> a relação de amor e cumplicidade que temos com nossos bichinhos de estimação é um vínculo único! <br> Por essa razão, não medimos esforços para oferecer o que há de melhor para trazer ainda mais alegria e qualidade de vida. Rações, acessórios, <br> medicamentos e brinquedos estão na nossa listinha de prioridades; e tudo isso você encontra aqui na pet&shop.
+            </p>
+            <br>
+        </div>    
+    </section>
+    <br>
+    <br>
+    <section>
+        <a href="produtos.html"><div class="nomeprodutos"><h1>Produtos</h1></div>
+        <div class="linha1">
+          <div class="produto"><img class="prod" src="product-1.webp">
+            <p> <div class="pp">Royal Canin Maxi <br>Adult 15kg</p>
+            <br></div>
+            <h3 style="color:#FF0077" class="h3p">R$ 109,90</h3></div>
+            <div class="produto"><img class="prod" src="product-2.webp">
+              <p>Premier Fórmula <br>Raças Medias Adulto</p>
+              <br>
+             <h3 style="color:#FF0077">R$ 79,90</h3>
+             </div>
+             <div class="produto"><img class="prod" src="product-3.webp">                 
+              <p>Pro Plan raças<br> pequenas Reduced <br>Calorie</p>
+             <h3 class="ph3" style="color:#FF0077">R$ 79,90</h3>
+             </div>
+             <div class="produto"><img class="prod" src="product-4.webp">
+              <p>EasOtic 10ml - virbac</p>
+              <br>
+              <br>
+              <h3 style="color:#FF0077">R$ 169,90</h3>
+           </div>
+           <div class="produto"><img class="prod" src="product-5.webp">
+            <p>Moletom Snoopy<br>
+              Sleeping-Azul-Zooz
+          </p>
+          <br>
+          <h3 style="color:#FF0077">R$ 39,90</h3>
+          </div> 
+          <div class="produto"><img class="prod" src="product-6.webp">
+            <p>N&D Ancestral<br>Selection Cães<br>Adultos Raças<br>grandes</p>
+           <h3 class="h3p1" style="color:#FF0077">R$ 89,90</h3>
+          </div>
+        </div></a>
+        <br>
+
+
+        <div class="linha1">
+          <a href="produtos.html"> <div class="produto"><img class="prod" src="product-7.webp">
+            <p>Kit Hills Prescription<br>Diet Lata A/D Urgent<br>Care 156g</p>
+        
+             <h3 class="ph3" style="color:#FF0077">R$ 44,90</h3></div></a>
+             <a href="produtos.html"><div class="produto"><img class="prod" src="product-8.webp">
+              <p>Three Cats Original<br>Sênior 10,1kg</p>
+              <br>
+              <h3 style="color:#FF0077">R$ 69,90</h3>
+             </div></a>
+             <a href="produtos.html"><div class="produto"><img class="prod" src="product-9.webp">                 
+              <p>Peitoral Ergoconfort<br>Rosa Ferplast</p>
+            <br>
+            <h3 style="color:#FF0077">R$ 134,90</h3>
+             </div></a>
+             <a href="produtos.html"><div class="produto"><img class="prod" src="product-10.webp">
+              <p>Peitoral Para <br>Cachorros Sail Dog 27</p>
+              <br>
+                <h3 style="color:#FF0077">R$ 129,90</h3>
+           </div></a>
+           <a href="produtos.html"><div class="produto"><img class="prod" src="product-11.webp">
+            <p>Guia Para Cachorros<br>Tropical Dog 27
+            </p>
+            <br>
+            <h3 style="color:#FF0077">R$ 114,90</h3>
+          </div> </a>
+          <a href="produtos.html"><div class="produto"><img class="prod" src="product-12.webp">
+            <p>Guia Para Cachorros<br>One Dog 27</p>
+                   <br>
+                    <h3 style="color:#FF0077">R$ 114,90</h3>
+          </div></a>
+        </div>
+        <br>
+        <br>
+        <div class="botao"><a href="produtos.html"><button class="botao1" name="button"><b>Ver mais</b></button></a></div>
+      </section>
+    <br>
+    <br>
+    <br>
+    </body>
+    <footer>
+        <section class="footer">
+            
+            <h1 class="h1footer">pet&shop</h1>
+            <div class="f1">
+            <div class="contato">
+                <h3 style="color:white">Contato</h3>
+                <p style="color:white">Estrada sem nome, 1234, Sala 0<br>
+                Bairro-Cidade / UF<br>
+            12345-678<br>
+            <b>(00) 99999-9999<br>
+            contato@petshop.com.br</b></p>
+            </div>
+            <div class="horario">
+                <h3 style="color:white">Horário de funcionamento</h3>
+                <p style="color:white">De Segunda a Sexta-feira das 9 às 19hs.<br>Aos Sábados das 9 às 18hs.</p>
+                <br>
+                <br>
+            </div>
+            <div class="siganos">
+                <h3 style="color:white">Siga-nos</h3>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="rodape" style="border-top:1px solid rgba(255, 255, 255, 0.54);">
+                <p style="color: white;">© 2022 pet&shop | Todos os direitos reservados. Desenvolvido por <b>Crie_Ti</b></p></div>
+                </div>
+        </section>
+    </footer>
+</html>
