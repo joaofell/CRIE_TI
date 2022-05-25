@@ -1,0 +1,29 @@
+.button{
+    height: 40px;
+    width: 90px;
+    padding: 10px 24px;
+    background-color: var(--color-primary);
+    line-height: 22px;
+    color:white;
+    text-decoration: none;  
+    border-radius: var(--border-radius-default);
+    border:none;
+}
+.button--large{
+    height: 60px;
+}
+@media screen and (max-width:400px) {
+    .button{
+        height: 26px;
+        width: 60px;
+        padding: 2px 12px;
+        font-size: 12px;
+    }
+    .button--large{
+        height: 48px;
+        width: 110px;
+        font-size: var(--font-size-default);
+        line-height: 22px;
+        padding: 14px 16px;
+    }
+}
