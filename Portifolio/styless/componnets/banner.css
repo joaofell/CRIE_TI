@@ -1,0 +1,50 @@
+.banner__title{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 80px;
+    text-align: center;
+
+}
+.banner{
+    height: auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+.banner__subtitle{
+    line-height: 30px;
+    text-align: center;
+    font-style: italic;
+    color:#6C6C6C;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.banner__text{
+    width: 800px;
+    margin: auto;
+    margin-top: 20px ;
+    line-height: 30px;
+    color:#363636;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner__title{
+        margin-top: 20px;
+        font-size: 33px;
+        }
+    .banner{
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .banner__subtitle{
+        font-size: 13px;
+        margin-top: 3px;
+    }
+    .banner__text{
+        width: 96%;
+        margin: 10px 2%;
+    }
+}

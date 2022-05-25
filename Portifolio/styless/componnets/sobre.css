@@ -1,0 +1,51 @@
+.sobre{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 80px;
+}
+.sobre__title{
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+.sobre__text{
+    margin-top: 20px;
+    font-weight: 400;
+    color: #363636;
+    line-height: 30px;
+}
+.trabalho__title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 110px;
+}
+.trabalho__div{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.trabalho__funcao{
+    margin-left: 300px;
+    color:#6C6C6C;
+    font-weight: 400px;
+}
+.trabalho__nome{
+    font-family: 600;
+}
+@media only screen and (max-width: 480px) {
+    .sobre{
+        margin: 0 20px;
+    }
+    
+    .sobre__title{
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    .trabalho__funcao{
+        margin-left: 40px;
+    }
+    .trabalho__title{
+        margin-top: 50px;
+    }
+}
